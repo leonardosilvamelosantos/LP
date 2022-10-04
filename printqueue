@@ -3,11 +3,10 @@
 program main
 {
 
-var x, y, sr, i;
-integer;
+var x, y, sr;
+var i: integer;
 
-procedure cond (y, x: integer);
-procedure cond (sr : integer);
+procedure form (x, y: integer; var sr : integer);
 
 
 begin
