@@ -1,0 +1,94 @@
+program main;
+
+var x, i, k, l : integer;    
+var city : vector;
+var now, nxt, result: integer;
+
+
+
+begin 
+  
+  type vector = array[1..5] of array[1..5] of integer;
+  city := vector
+
+  city[1,1] := 0;
+  city[2,1] := 15;
+  city[3,1] := 30;
+  city[4,1] := 5;
+  city[5,1] := 12;
+  
+  
+    city[1,2] := 15;
+    city[2,2] := 0;
+    city[3,2] := 10;
+    city[4,2] := 17;
+    city[5,2] := 28;
+
+  
+  
+  city[1,3] := 30;
+  city[2,3] := 10;
+  city[3,3] := 0;
+  city[4,3] := 3;
+  city[5,3] := 11;
+  
+  
+  
+    city[1,4] := 5;
+    city[2,4] := 17;
+    city[3,4] := 3;
+    city[4,4] := 0;
+    city[5,4] := 80;
+  
+  
+  
+  city[1,5] := 12;
+  city[2,5] := 28;
+  city[3,5] := 11;
+  city[4,5] := 80;
+  city[5,5] := 0;
+
+
+result := 0;
+i := 1;
+now := 1;
+nxt := 1;
+
+k := 1;
+l := 1;
+
+for k:= 1 to 5 do 
+    begin
+    for l:= 1 to 5 do
+    begin
+        writeln(city[k, l]);
+    end;
+
+
+writeln('Quantia de cidades: ');
+read(n);
+
+while  i <= x do
+    begin
+        if (i <> 1) then
+        begin
+now := nxt;
+writeln('Digite agora o numero da cidade : ');
+read(nxt);
+result := result + cidades[now, nxt];
+i := i + 1;
+        end
+        else 
+            begin
+writeln('Num da Cidade atual: ');
+read(now);
+writeln('Num da Cidade a seguir: ');
+read(nxt);
+result := result + cidades[now, nxt];
+     i := i + 1;
+        end;
+
+    end;
+
+    writeln('Distancia = ', result,  'km');
+    end.
