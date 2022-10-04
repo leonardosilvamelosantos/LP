@@ -1,0 +1,21 @@
+program main;
+
+
+var x, n, f: integer;
+
+function fator(x: integer): integer; 
+
+begin
+   if x=0 then
+    fator := 1
+   else
+    fator := x * fator(x-1); 
+end; 
+
+begin
+   writeln(' Digite um valor pertencente aos numeros inteiros (0-9) : ');
+   readln(n);
+   f := fator(n);
+   
+   writeln(' O fatorial de ', n, ', e igual a : ' , f);
+end.
