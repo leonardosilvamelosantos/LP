@@ -1,0 +1,41 @@
+//printar lista de elementos(a,b,c,d)
+
+program main
+{
+
+var x, y, sr, i;
+integer;
+
+procedure cond (y, x: integer);
+procedure cond (sr : integer);
+
+
+begin
+
+    sr := 1;
+
+    for i := 0 to y do
+     sr := sr * x;
+
+end;
+}
+
+	begin
+{
+	  res := 1;
+	  i := 0;
+
+
+write(' vl x: ');
+readln(x);
+
+write(' vl y: ');
+readln(y);
+
+condicao(y, x, sr);
+writeln();
+
+writeln(' result is = ', sr);
+
+end.
+}
