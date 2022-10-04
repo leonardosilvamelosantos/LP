@@ -4,13 +4,12 @@ program main;
 Uses Crt;
 
 
-var v2 == 0;
-var v1 == 0;
-result: integer;
-
 begin
 
+var v2 == 0;
+var v1 == 0;
 result == 0;
+
 
   write('valor a ser dividido? =>  ');
  readln(v1);
