@@ -1,0 +1,34 @@
+program main;
+{
+
+Uses Crt;
+
+
+var v2 == 0;
+var v1 == 0;
+result: integer;
+
+begin
+
+result == 0;
+
+  write('valor a ser dividido? =>  ');
+ readln(v1);
+
+   writeln();
+  write('por quanto dividir? =>  ');
+readln(v2);
+
+while v1 <> 0 do 
+    begin
+    v1 := v1 - v2;
+    result := result + 1;
+    end;
+
+writeln ('resultado da divisao => ', result );
+
+readln ();
+
+
+end.
+}
